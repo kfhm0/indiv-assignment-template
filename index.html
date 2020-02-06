@@ -95,48 +95,7 @@ The main challenge is to start using it, Once it's done, it becomes quickly a us
       <h3>Sources</h3>
 
       <p>
-        Provide sources for the dataset, any code used, and design inspirations here. Dishonesty will result in a 0 for the assignment or the <strong>entire course</strong>.
-      Robin Wilson’s blog
-      OpenstreetMap
-      Datacamp
-        Code :
- import folium
- import pandas as pd
 
-deaths=pd.read_csv('/Users/otb/Desktop/deaths.csv')
-deaths
-# Rename your columns
-
-newcols = {
-    'Death': 'death_count',
-    'X coordinate': 'x_latitude', 
-    'Y coordinate': 'y_longitude' 
-    }
-
-deaths.rename(columns=newcols, inplace=True)
-
-locations = deaths[['x_latitude', 'y_longitude']]
-deaths_list = locations.values.tolist()
-deaths_list 
-map = folium.Map(location=[51.5132119,-0.13666], tiles='Stamen Toner', zoom_start=18)
-for point in range(0, len(deaths_list)):
-    folium.CircleMarker(deaths_list[point], radius=18, color='red', fill=True, fill_color='red', opacity = 0.4).add_to(map)
-map
-        
-# Import the data
-pumps = pd.read_csv('/Users/otb/Desktop/pumps.csv')
-
-# Subset the DataFrame 
-locations_pumps = pumps[['X coordinate', 'Y coordinate']]
-
-# Transform the DataFrame to list of lists 
-pumps_list = locations_pumps.values.tolist()
-
-# Create a for loop (use previous map)
-map1 = map
-for point in range(0, len(pumps_list)):
-    folium.Marker(pumps_list[point], popup=pumps['Pump Name'][point]).add_to(map1)
-map1
 
 #output Visualization on the link
         
