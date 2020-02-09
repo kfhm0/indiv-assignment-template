@@ -1,9 +1,7 @@
 <h1>
-  Data Visualization Suicides &bullet; 
+  Data Visualization Suicides 
   <small>
-    <br/>
-    MSc Finance & Big Data
-    &bullet; Neoma Business School
+    <br/>  
   </small>
 </h1>
 
