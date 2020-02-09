@@ -1,5 +1,5 @@
 <h1>
-  Data Visualization Suicides 
+   Suicides Data Visualization
   <small>
     <br/>  
   </small>
