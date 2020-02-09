@@ -1,5 +1,5 @@
 <h1>
-  Data Visualization &bullet; 2020
+  Data Visualization Suicides &bullet; 2020
   <small>
     <br/>
     MSc Finance & Big Data
